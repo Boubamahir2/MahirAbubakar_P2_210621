@@ -539,6 +539,7 @@ p {
   background: white;
   box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
   margin-top: 40px;
+  cursor: pointer;
 }
 .Îles-Frioules:hover {
   transform: scale(1.1);
@@ -3175,7 +3176,7 @@ footer {
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1500px) {
-  
+
   body {
     max-width: 100%;
   }
