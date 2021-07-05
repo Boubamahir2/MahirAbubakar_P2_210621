@@ -7,6 +7,10 @@ body {
   width: 100%;
 }
 
+.page{
+  padding: 0 40px;
+}
+
 :root {
   --clrBleu: #0065fc;
   --clrGris: #f2f2f2;
@@ -23,6 +27,13 @@ nav {
 #activit.nav_a:hover {
   color: var(--clrBleu);
 }
+
+#activitt.nav_a:hover{
+  color: var(--clrBleu);
+}
+
+
+
 
 .flexColumnBetween li,
 a {
@@ -130,6 +141,12 @@ a {
   margin: 0 10px 0 10px;
 }
 
+.bloc-fas i{
+  width: 50px;
+  height: 50px;
+ 
+}
+
 .filtreIcons {
   z-index: 9999;
   margin-right: -30px;
@@ -161,6 +178,14 @@ a {
 
 .animal {
   width: 140px;
+}
+
+.Romantique{
+  width: 120px;
+}
+
+.Economique{
+  width: 120px;
 }
 
 .info {
@@ -700,7 +725,7 @@ footer {
   font-weight: 500;
 }
 
-@media screen and (min-width: 100px) and (max-width: 199px) {
+@media screen and (min-width: 54px) and (max-width: 199px) {
   body {
     width: 100%;
 
@@ -739,6 +764,13 @@ footer {
   }
 
   #activit.nav_a:hover {
+    color: var(--clrBleu);
+  }
+  #activitt.nav_a{
+    padding: 13px 40px 10px 70px;
+    margin: 0;
+  }
+  #activitt.nav_a:hover{
     color: var(--clrBleu);
   }
 
@@ -825,8 +857,16 @@ footer {
     height: auto;
   }
 
+  .bloc-fas i{
+    position:absolute;
+    height: 35px;
+    width:35px;
+    left:-10px
+
+  }
+
   .iconeAside .filtreIcons {
-    width: 30px;
+    width: 35px;
   }
 
   .filtreIcons {
@@ -838,7 +878,6 @@ footer {
 
   .flexrow .bloc-fas {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 60%;
     height: 30px;
@@ -854,7 +893,7 @@ footer {
   }
 
   .flexCentre.icons-text {
-    text-align: center;
+   
     width: 70%;
     padding-left: 10px;
     margin: 0;
@@ -1304,6 +1343,14 @@ footer {
     color: var(--clrBleu);
   }
 
+  #activitt.nav_a{
+    padding: 13px 40px 10px 70px;
+    margin: 0;
+  }
+  #activitt.nav_a:hover{
+    color: var(--clrBleu);
+  }
+
   a.nav_a:last-child {
     padding-right: 20px;
     margin-right: 0;
@@ -1382,20 +1429,20 @@ footer {
     position: relative;
     font-size: 3.5vw;
     margin: 5px 0 5px 20px;
-    width: 90%;
+    width: 240px;
     flex-direction: column;
-    height: 180px;
+    height: 200px;
   }
 
   .filtreIcons .flexCentre {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    height: 30px;
+    width: 30px;
   }
 
   .filtreIcons {
-    margin-right: -20px;
+    margin-left: -20px;
     border-radius: 25px;
     width: 40px;
     height: 40px;
@@ -1403,20 +1450,28 @@ footer {
     background-color: var(--clrBleuCl);
   }
 
+  .bloc-fas i{
+    position:absolute;
+    height: 39px;
+    width:40px
+
+  }
+
   .iconeAside .filtreIcons {
-    width: 40px;
+    width: 35px;
   }
 
   .flexrow .bloc-fas {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
-    height: 50px;
+    width: 45%;
+    height: 40px;
     border: 2px solid var(--clrGrisfonce);
     margin: 0;
     margin-bottom: 10px;
     border: none;
+    margin-left: 20px;
   }
 
   .filtre h3 {
@@ -1428,28 +1483,29 @@ footer {
     height: 35px;
     padding-left: 20px;
     margin-left: 0;
+    width: 65px;
   }
 
   .flexrow .bloc-fas.animala {
     width: 70%;
   }
   .flexrow .bloc-fas.iconeAside {
-    width: 50%;
+    width: 30%;
   }
 
   .iconSize {
     font-size: 4.5vw;
-    height: 50px;
-    width: 50px;
-    border-radius: 20px 0 0 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 13px 0 0 13px;
     background: var(--clrGris);
     cursor: pointer;
   }
 
   .iconeAside {
     position: absolute;
-    top: 33px;
-    right: 0;
+    top: 39px;
+    right: 10px;
   }
 
   .bloc_research {
@@ -1460,7 +1516,7 @@ footer {
 
   #search {
     font-size: 3.5vw;
-    height: 50px;
+    height: 40px;
     width: 90%;
     border: 3px solid var(--clrGris);
     border-right: none;
@@ -1473,12 +1529,12 @@ footer {
     display: none;
   }
   div.researche {
-    margin-left: -45px;
-    height: 50px;
-    width: 50px;
+    margin-left: -25px;
+    height: 40px;
+    width: 40px;
     background: var(--clrBleu);
     color: white;
-    border-radius: 20px;
+    border-radius: 12px;
     cursor: pointer;
     font-weight: bold;
     background-repeat: no-repeat;
@@ -1867,6 +1923,13 @@ footer {
     margin: 0;
   }
 
+  #activitt.nav_a{
+    padding: 13px 40px 10px 70px;
+    margin: 0;
+  }
+  #activitt.nav_a:hover{
+    color: var(--clrBleu);
+  }
   #activit.nav_a:hover {
     color: var(--clrBleu);
   }
@@ -1917,7 +1980,9 @@ footer {
     position: absolute;
     left: 20px;
     top: 0;
+   
   }
+  
 
   .bloc_headerel {
     position: relative;
@@ -1947,9 +2012,9 @@ footer {
 
   .filtre {
     position: relative;
-    font-size: 3vw;
+    font-size: 3.2vw;
     margin: 5px 0 5px 20px;
-    width: 90%;
+    width:350px;
     flex-direction: column;
     height: auto;
   }
@@ -1960,6 +2025,13 @@ footer {
     height: 100%;
     width: 100%;
   }
+
+  .bloc-fas i{
+    width: 50px;
+    height: 49px;
+  }
+
+
 
   .filtreIcons {
     margin-right: -20px;
@@ -1978,7 +2050,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 150px;
+    width: 180px;
     height: 50px;
     border: 2px solid var(--clrGrisfonce);
     margin: 0;
@@ -1996,16 +2068,6 @@ footer {
     margin-left: 0;
   }
 
-  /*.flexCentre.icons-text {
-    border: 2px solid var(--clrGrisfonce);
-    text-align: center;
-    width: 150px;
-    padding-left: 10px;
-    margin: 0;
-    border-left: unset;
-    height: 100%;
-    width: auto;
-  }*/
 
   .flexrow .bloc-fas.animala {
     width: 190px;
@@ -2018,7 +2080,7 @@ footer {
     font-size: 4.5vw;
     height: 50px;
     width: 50px;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
     background: var(--clrGris);
     cursor: pointer;
   }
@@ -2050,12 +2112,12 @@ footer {
     display: none;
   }
   div.researche {
-    margin-left: -45px;
+    margin-left: -30px;
     height: 50px;
     width: 50px;
     background: var(--clrBleu);
     color: white;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
     font-weight: bold;
     background-repeat: no-repeat;
