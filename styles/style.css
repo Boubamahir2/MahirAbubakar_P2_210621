@@ -2474,6 +2474,10 @@ footer {
     font-weight: 600;
   }
 
+
+  header{
+    width: 800px;
+  }
   .page {
     padding: 0;
     margin: 0;
@@ -3032,7 +3036,8 @@ footer {
 
   .nav {
     font-size: 1vw;
-    width: 100vw;
+    width: 100%;
+   overflow: hidden;
   }
 
   #activit.nav_a:hover {
@@ -3042,6 +3047,35 @@ footer {
   .researche .fas {
     display: none;
   }
+
+  .filtre {
+    height: 60px;
+    width: 950px;
+    margin-top: 20px;
+  }
+  
+  .filtre div {
+    margin: 0 10px 0 10px;
+  }
+
+  .bloc-fas{
+    padding-left: 20px;
+    position: relative;
+    width: 150px;
+  }
+  
+  .bloc-fas i{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:-1px;
+   
+  }
+
+  .iconeAside .filtreIcons {
+    width: 50px;
+  }
+  
 
   .page {
     max-width: 98%;
@@ -3057,12 +3091,12 @@ footer {
     max-width: 90%;
   }
 
-  .bloc_research {
-    max-width: 40vw;
+  div.filtre{
+    width: 90%;
   }
 
-  div.filtre {
-    max-width: 80%;
+  .bloc_research {
+    max-width: 40vw;
   }
 
   .article {
@@ -3243,9 +3277,13 @@ footer {
     max-width: 100%;
   }
 
+  .page{
+    padding: 0 30px;
+  }
+
   .nav {
     font-size: 1.2vw;
-    width: 100vw;
+    width: 100%;
   }
 
   #activit.nav_a:hover {
@@ -3273,10 +3311,7 @@ footer {
   .bloc_research {
     max-width: 40vw;
   }
-  div.filtre {
-    max-width: 80%;
-  }
-
+  
   .article {
     font-size: 1vw;
     width: 58%;
