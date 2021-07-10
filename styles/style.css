@@ -28,7 +28,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px ,auto);
-  grid-gap: 10px;
   max-width: 100%;
   grid-template-areas:
   "nav nav nav"
@@ -39,8 +38,9 @@ body {
 }
 
 .logo img{
-  width: 120px;
-  height: 40px;
+  padding-left: 50px;
+  width: 188px;
+  height: auto;
 }
 
 :root {
@@ -50,10 +50,11 @@ body {
   --clrGrisfonce: #d1cece;
 }
 
+/*nav*/
 nav{
-  font-size: 2vw;
+  display: grid;
+  font-size: 1.5rem;
   grid-area: nav;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -61,38 +62,541 @@ nav{
 nav ul{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
- nav li{
+.nav_bar{
+  grid-column: 4/5;
+}
+ nav a{
    margin: 0;
-   padding: 40px 20px;
+   padding: 33px 20px;
+ }
+
+ nav a:hover{
+  color: #0065fc;
+  border-top: 3px solid var(--clrBleu);
+  
  }
 .nav-bar{
   margin: 0;
   align-items: center;
   padding: 0;
+
 }
-/*
-nav li{
-  float: left;
-  margin: 0;
-  align-items: center;
-  padding: 40px;
-}*/
+
+.nav_a{
+  color: black;
+}
+
+.nav_b{
+  color:var(--clrBleu);
+}
 
 
+/*Heder*/
 header{
+  font-size: 1.1rem;
   grid-area: header;
+  padding:0 50px;
+
 }
+
+header h1{
+margin: 10px 0;
+font-size: 2.2rem;
+}
+header p{
+  margin:20px 0 ;
+  font-size: 1.4rem;
+
+}
+
+.bloc_research{
+display: flex;
+}
+
+
+.iconSize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px 0 0 10px;
+  background: var(--clrGris);
+  cursor: pointer;
+ }
+
+#search {
+  width: 250px;
+  height: 50px;
+  border: 2px solid var(--clrGris);
+  padding-left: 20px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.researche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 130px;
+  background: var(--clrBleu);
+  color: white;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.researche .fas {
+  display: none;
+}
+
+.icons-text{
+  padding-left: 45px;
+}
+
+.icons-text:hover {
+  color: #0065fc;
+}
+
+.iconSizemap {
+  font-size: 1.1em;
+}
+
+
+.bloc-fas:hover > .filtreIcons {
+  color: white;
+  background-color: var(--clrBleu);
+}
+.bloc-fas:hover > .icons-text {
+  color:var(--clrBleu);
+  
+}
+
+.researche:hover {
+  background: var(--clrBleuCl);
+  color: var(--clrBleu);
+}
+
+.filtre{
+  font-size: 1rem;
+  font-weight: bold;
+  width: 960px;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-gap: 20px;
+}
+
+.filtre h3{
+  font-size: 1.5rem;
+}
+.bloc-fas{
+  grid-column: span 2;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  border:2px solid #d1cece;
+  border-radius:30px;
+  cursor: pointer;
+  
+}
+
+.bloc-fasanimal{
+  grid-column: 8/11;
+}
+
+.bloc-fas i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  position: absolute;
+  left: -2px;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background: var(--clrBleuCl);
+}
+
+.filtreIcons{
+  text-align: center;
+  align-items: center;
+}
+
+.filtre h3{
+  width:70px;
+
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.info p{
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+.infoicon{
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border:#d1cece 2px solid;
+  border-radius: 15px;
+  color: #0065fc;
+  cursor: pointer;
+}
+
 
 main{
+  padding: 20px 50px;
   grid-area: main;
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(700px, auto);
+}
+
+article{
+  grid-column: 1/3;
+  display: grid; 
+  background:#f2f2f2;
+  border-radius: 25px;
+}
+article h2{
+  font-size: 1.5rem;
+  padding-left: 40px;
+}
+
+.hebergements{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 40px;
+  grid-row-gap: 20px;
+}
+
+.bloc_hotel{
+position: relative;
+background-color: white;
+width: 90%;
+height: 250px;
+border: 5px solid white;
+border-radius: 20px;
+cursor: pointer;
+box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+}
+
+.bloc_hotel:hover{
+  transform:scale(1.05) ;
+  transition: all 150ms ease-out;
+}
+
+.auberge-elements {
+  margin: 0;
+  height: 90px;
+  width: 100%;
+
+}
+
+.auberge-elements h3{
+  font-size: 1rem;
+  margin: 0;
+  padding: 5px 0 10px 20px;
+
+}
+.auberge-elements p{
+  margin: 0;
+  font-size: 0.8rem;
+  padding-left: 20px;
+
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+
+
+.img2 {
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+}
+.plusimg{
+  height: 100%;
+  width: 50%;
+}
+
+.elements{
+  position: relative;
+  font-size: 1rem;
+  width: 50%;
+  height: 100%;
+  padding-left:20px ;
+}
+
+.elements p{
+  font-size: 0.8rem;
+
+}
+
+.article-fas{
+  position: absolute;
+  padding-left: 20px;
+  bottom:10px;
+}
+
+.Afficher-plus{
+  color: black;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+aside{
+  grid-column: 3/4;
+  background:#f2f2f2;
+  border-radius: 25px;
+}
+
+.aside-fas{
+  position: absolute;
+ 
+  bottom: 10px;
+}
+
+.clrBleu{
+  color: #0065fc;}
+.clrGrisfonce{
+  color:var(--clrGrisfonce);
+}
+
+.plusPopulaires {
+  align-items: center;
+  padding: 0px 20px 5px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plusPopulaires h2 {
+  font-size: 1.5rem;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.plusPopulaires-hotel {
+  position: relative;
+  padding: 0;
+  display: flex;
+  background-color: white;
+  width: 90%;
+  height: 170px;
+  border: 5px solid white;
+  border-radius: 20px;
+  margin: 20px auto;
+  cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+  cursor: pointer;
+}
+
+.plusPopulaires-hotel:hover{
+  transform:scale(1.05) ;
+  transition: all 150ms ease-out;
 }
 
 section{
   grid-area: section;
+  padding: 20px 50px;
 
 }
 
+.activité{
+  display: grid;
+  grid-gap:40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+section h2{
+  font-size: 1.5rem;
+
+}
+
+.elements-activité{
+  cursor: pointer;
+  height: 600px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+}
+
+.elements-activité:hover{
+  transform:scale(1.05) ;
+  transition: all 150ms ease-out;
+}
+.bloc-pomegues-notreDame{
+  height: 600px; 
+}
+
+.Parc-Longchamp {
+  cursor: pointer;
+  border-radius: 20px;
+  height: 340px;
+  background: white;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+  cursor: pointer;
+  margin-top: 40px;
+
+}
+
+.Parc-Longchamp:hover{
+  transform:scale(1.05) ;
+  transition: all 150ms ease-out;
+}
+
+.Fort-Pomégues{
+  cursor: pointer;
+  border-radius: 20px;
+  height: 340px;
+  background: white;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.Fort-Pomégues:hover{
+  transform:scale(1.05) ;
+  transition: all 150ms ease-out;
+}
+.Notre-Dame {
+  cursor: pointer;
+  height: 220px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+  cursor: pointer;
+}
+
+.Notre-Dame:hover{
+  transform:scale(1.05) ;
+  transition: all 150ms ease-out;
+}
+
+
+
+.Îles-Frioules {
+  cursor: pointer;
+  height: 220px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.Îles-Frioules:hover{
+  transform:scale(1.05) ;
+  transition: all 150ms ease-out;
+}
+
+.activites-h3 {
+  padding: 0;
+  margin: 10px 0 20px 40px;
+}
+
+.Vieux-Port img {
+  object-fit: cover;
+  width: 100%;
+  height: 530px;
+  border-radius: 20px 20px 0 0;
+}
+
+.Fort-Pomégues img {
+  object-fit: cover;
+  width: 100%;
+  height: 280px;
+  border-radius: 20px 20px 0 0;
+}
+
+.Îles-Frioules img {
+  object-fit: cover;
+  width: 100%;
+  height: 160px;
+  border-radius: 20px 20px 0 0;
+}
+.Parc-Calanques img {
+  object-fit: cover;
+  width: 100%;
+  height: 530px;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+}
+
+.Notre-Dame img {
+  object-fit: cover;
+  width: 100%;
+  height: 160px;
+  border-radius: 20px 20px 0 0;
+}
+
+.Parc-Longchamp img {
+  object-fit: cover;
+  width: 100%;
+  height: 280px;
+  border-radius: 20px 20px 0 0;}
+
+
+
 footer{
   grid-area: footer;
+
+}
+
+footer {
+  font-size: 1.2rem;
+  display: flex;
+  margin-top: 70px;
+  padding:20px 50px;
+  height: 180px;
+  width: 100%;
+  background: var(--clrGris);
+
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.Apropos {
+  padding: 0 150px 0 0;
+}
+
+.tailleBlocFoot {
+  padding: 0 150px 0 150px;
+}
+
+.divLienFoot a {
+  color: rgb(56, 56, 56);
+  padding-top: 10px;
+  font-weight: 500;
 }
