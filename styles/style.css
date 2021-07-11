@@ -1,5 +1,5 @@
 /*General*/
-*/html,body,p,ol,ul,li,h1,h2,h3{margin:0;padding:0}
+html,body,p,ol,ul,li,h1,h2,h3{margin:0;padding:0}
 
 h1,h2,h3,h4{
 font-size:100%;font-weight:700}
@@ -592,11 +592,700 @@ footer {
 }
 
 .tailleBlocFoot {
-  padding: 0 150px 0 150px;
+  padding: 0 100px 0 100px;
 }
 
 .divLienFoot a {
   color: rgb(56, 56, 56);
   padding-top: 10px;
   font-weight: 500;
+}
+
+
+@media screen  and (min-width:961px) and (max-width: 1300px){
+
+  nav{
+    font-size: 1.3rem;
+  }
+
+  header h1{
+    font-size: 1.7rem;
+  }
+  header p{
+    font-size: 1.3rem;
+  }
+
+  .filtre{
+    font-size: 0.85rem;
+    font-weight: bold;
+    width: 900px;
+  }
+
+  .bloc-article h2{
+    font-size: 1.1rem;
+  }
+  .auberge-elements h3{
+    font-size: 0.9rem;
+    padding-left: 10px;
+  }
+  
+  .auberge-elements p{
+    padding-left: 10px;
+    font-size: 0.75rem;
+  }
+
+  .article-fas{
+    font-size: 0.8rem;
+    padding-left: 10px;
+  }
+
+  .bloc-aside h2{
+    font-size: 1.1rem;
+  }
+
+  .bloc-aside .fa-chart-line{
+    font-size: 1.2rem;
+  }
+
+  .plusPopulaires-hotel h3{
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+    margin: 5px;
+  }
+
+  .aside-fas{
+    font-size: 0.8rem;
+  }
+  .plusPopulaires-hotel p{
+    font-size: 0.75rem;
+    margin: 5px;
+  }
+  .elements{
+    padding-left: 10px;
+  }
+  
+  main{
+    grid-template-rows: 600px
+  }
+  
+  .bloc_hotel{
+  height: 200px;
+  }
+  
+  .img {
+    height: 100px;
+  }
+  
+  .plusPopulaires-hotel {
+    height: 140px; 
+  }
+
+  
+  .elements-activité{
+    cursor: pointer;
+    height: 490px;
+    
+  }
+  
+  .bloc-pomegues-notreDame{
+    height: 500px; 
+  }
+  
+  .Parc-Longchamp {
+    height: 250px;
+  }
+  
+  .Fort-Pomégues{
+    height: 250px;
+   
+  }
+  
+  .Notre-Dame {
+    height: 200px;
+  }
+
+  .Îles-Frioules {
+    height: 200px;
+  }
+ 
+  .Vieux-Port img {
+    height: 430px; 
+  }
+  
+  .Fort-Pomégues img {
+    height: 190px;
+  }
+  
+  .Îles-Frioules img {
+    height: 140px;
+  }
+  .Parc-Calanques img {
+    height: 430px;
+  }
+  
+  .Notre-Dame img {
+    height: 140px;  
+  }
+  
+  .Parc-Longchamp img {
+    width: 100%;
+    height: 190px
+    ;}
+
+  .activité{
+      grid-gap:15px;}
+
+  footer {
+    height: 160px;
+    font-size: 1rem;
+  }
+
+  .Apropos {
+    padding: 0 30px 0 0;
+  }
+  
+  .tailleBlocFoot {
+    padding: 0 80px 0 80px;
+  }
+  #activites h3{
+    font-size: 0.9rem;
+  }
+
+}
+
+
+@media screen and (min-width: 700px) and (max-width:960px) {
+  nav{
+    font-size: 0.95rem;
+  }
+  
+  .logo img{
+    width: 150px;
+    height: 40px;
+  }
+
+  header h1{
+    font-size: 1.2rem;
+  }
+  header p{
+    font-size: 1rem;
+  }
+
+  .filtre{
+    grid-template-columns: repeat(9,1fr);
+    grid-gap: 10px;
+    align-items: center;
+    height: 40px;
+    margin: 0;
+    font-size: 0.65rem;
+    width: 620px;
+  }
+
+  .icons-text{
+    padding-left: 35px;
+  }
+  
+  .bloc-fas{ 
+  height: 40px;
+  width: 100%;
+  }
+  .bloc-fas i{
+  height: 40px;
+  width: 40px;
+ 
+  }
+  div.info{
+    margin-top: 20px;
+
+  }
+  .info p{
+  font-size: 0.9rem;
+  padding-left: 10px;
+  }
+
+  .infoicon{
+  height: 22px;
+  width: 22px;
+  }
+
+  .auberge-elements h3{
+    font-size: 0.9rem;
+    padding-left: 10px;
+  }
+  
+  .auberge-elements p{
+    padding-left: 10px;
+    font-size: 0.7rem;
+  }
+
+  .article-fas{
+    font-size: 0.6rem;
+    padding-left: 10px;
+  }
+
+  .bloc-aside{
+    margin-bottom: 40px;
+    height: 250px;
+  }
+
+  .bloc-aside h2{
+    font-size: 1.1rem;
+  }
+
+  .bloc-aside .fa-chart-line{
+    font-size: 1.2rem;
+  }
+
+  .plusPopulaires-hotel{
+    margin: 0 auto;
+  }
+
+  .plusPopulaires-hotel h3{
+    font-size: 0.8rem;
+  }
+
+  .aside-fas{
+    font-size: 0.6rem;
+  }
+  aside{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .plusPopulaires{
+    grid-column: 1/4;
+  }
+  .hebergements{
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .plusPopulaires-hotel p{
+    font-size: 0.6rem;
+    margin: 0; 
+  }
+  
+  
+  .elements{
+    padding-left: 5px;
+  }
+  
+  main{
+    grid-template-rows: 600px
+  }
+
+  main{
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  
+  .bloc_hotel{
+  height: 200px;
+  }
+  
+  .img {
+    height: 100px;
+  }
+  
+  .plusPopulaires-hotel {
+    height: 140px; 
+  }
+
+  .elements-activité{
+    height: 490px;
+    
+  }
+  
+  .bloc-pomegues-notreDame{
+    height: 500px; 
+  }
+  
+  .Parc-Longchamp {
+    height: 250px;
+  }
+  
+  .Fort-Pomégues{
+    height: 250px;
+   
+  }
+  
+  .Notre-Dame {
+    height: 200px;
+  }
+
+  .Îles-Frioules {
+    height: 200px;
+  }
+ 
+  .Vieux-Port img {
+    height: 430px; 
+  }
+  
+  .Fort-Pomégues img {
+    height: 190px;
+  }
+  
+  .Îles-Frioules img {
+    height: 140px;
+  }
+  .Parc-Calanques img {
+    height: 430px;
+  }
+  
+  .Notre-Dame img {
+    height: 140px;  
+  }
+  
+  .Parc-Longchamp img {
+    width: 100%;
+    height: 190px
+  }
+
+  .activité{
+   grid-gap:20pxpx;
+   grid-template-columns: repeat(2, 1fr);
+  }
+  
+  footer {
+    height: 160px;
+    font-size: 1rem;
+  }
+
+  .Apropos {
+    padding: 0 30px 0 0;
+  }
+  
+  .tailleBlocFoot {
+   padding: 0 30px 0 30px;}
+
+ 
+}
+
+@media screen and (min-width: 400px) and (max-width:699px) {
+  nav{
+    position: relative;
+    font-size: 0.9rem;
+    border-bottom:#d1cece 3px solid;
+    height: 120px;
+  }
+
+  .nav_linkfirst a{
+    left:40px
+  }
+
+  .nav_a{
+    position: absolute;
+  }
+
+  .bloc_header{
+   
+    padding: 20px;
+  }
+  .logo img{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 130px;
+    height: 35px;
+  }
+
+  .iconSize {
+    border-radius: 15px 0 0 15px;
+   }
+  
+  #search {
+    width: 200px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+  
+  .researche {
+    margin-left: -15px;
+    width: 50px;
+    border-radius:  15px;
+   
+  }
+
+  .researche .fas {
+    display: block;
+  }
+
+  .researche span{
+    display: none;
+  }
+
+  header h1{
+    font-size: 1.2rem;
+  }
+  header p{
+    font-size: 0.9rem;
+  }
+
+  div.filtre{
+    display: grid;
+    grid-template-rows:repeat(4, 30px) ;
+    grid-gap: 20px;
+    align-items: center;
+    height: 200px;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    width: 95%;
+  }
+
+  div.filtre h3{
+  font-size: 1.2rem;
+  }
+
+  .bloc-fasEconomique{
+    grid-column: 1/ 4;
+    grid-row: 2;
+  }
+
+  .bloc-fasfamilial{
+    grid-column: 5/ 9;
+    grid-row: 2;
+  }
+  .bloc-fasRomantique{
+    grid-column: 1/ 4;
+    grid-row: 3;
+  }
+
+  .bloc-fasanimal{
+    grid-column: 1/ 5;
+    grid-row: 4;
+  }
+  .icons-text{
+    padding-left: 35px;
+  }
+  
+  .bloc-fas{ 
+  height: 40px;
+  width: 100%;
+  }
+  .bloc-fas i{
+  height: 40px;
+  width: 40px;
+ 
+  }
+  div.info{
+    margin-top: 5px;
+
+  }
+  .info p{
+  font-size: 0.7rem;
+  padding-left: 10px;
+  }
+
+  .infoicon{
+    font-size: 0.8rem;
+  height: 22px;
+  width: 22px;
+  }
+
+  .auberge-elements h3{
+    font-size: 0.8rem;
+    padding-left: 10px;
+  }
+  
+  .auberge-elements p{
+    padding-left: 10px;
+    font-size: 0.7rem;
+  }
+
+  .article-fas{
+    font-size: 0.6rem;
+    padding-left: 10px;
+  }
+
+  .bloc-aside{
+    margin-bottom: 40px;
+    height: 250px;
+  }
+
+  .bloc-aside h2{
+    font-size: 1.1rem;
+  }
+
+  .bloc-aside .fa-chart-line{
+    font-size: 1.2rem;
+  }
+
+  .plusPopulaires-hotel{
+    margin: 0 auto;
+  }
+
+  .plusPopulaires-hotel h3{
+    font-size: 0.8rem;
+  }
+
+  .aside-fas{
+    font-size: 0.6rem;
+  }
+  .bloc-aside{
+    height: 550px;
+   display: flex;
+   flex-flow: column;
+   /*background-color: unset;*/
+   justify-content: space-evenly;
+  }
+
+  .plusPopulaires{
+    grid-column: 1/4;
+  }
+  .hebergements{
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    
+  }
+  .plusPopulaires-hotel h3{
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  .plusPopulaires-hotel p{
+    font-size: 0.8rem;
+    margin: 0; 
+  }
+
+  .aside-fas{
+    font-size: 0.9rem;
+  }
+  
+  .elements{
+    padding-left: 10px;
+  }
+  
+  main{
+    grid-template-rows: 600px
+  }
+
+  main{
+    display: flex;
+    flex-flow: column-reverse;
+    padding: 20px;
+  }
+  
+  .bloc_hotel{
+  height: 255px;
+  }
+
+  .bloc_hotel h3{
+    font-size: 1.2rem;
+  }
+
+
+  .bloc_hotel p{
+    font-size: 1rem;
+  }
+
+  .article-fas{
+    font-size: 1rem;
+  }
+  
+  .img {
+    height: 140px;
+  }
+  
+
+  .plusPopulaires-hotel {
+    height: 150px; 
+  }
+
+
+  .activité{
+   
+    grid-template-columns: repeat(1, 1fr);
+   }
+  .elements-activité{
+    height: 200px;
+    
+  }
+
+  section{
+    padding: 20px;
+  }
+
+  section h2{
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+  }
+  
+  .bloc-pomegues-notreDame{
+    height: 500px; 
+  }
+  
+  .Parc-Longchamp {
+    height: 200px;
+  }
+  
+  .Fort-Pomégues{
+    height: 200px;
+   
+  }
+  
+  .Notre-Dame {
+    height: 200px;
+  }
+
+  .Îles-Frioules {
+    height: 200px;
+  }
+ 
+  .Vieux-Port img {
+    height: 150px; 
+  }
+  
+  .Fort-Pomégues img {
+    height: 150px;
+  }
+  
+  .Îles-Frioules img {
+    height: 150px;
+  }
+  .Parc-Calanques img {
+    height: 150px;
+  }
+  
+  .Notre-Dame img {
+    height: 150px;  
+  }
+  
+  .Parc-Longchamp img {
+    width: 100%;
+    height: 150px
+  }
+ 
+  footer {
+    margin: 0;
+    height: 360px;
+    font-size: 1.2rem;
+  }
+
+  .footer{
+  display: flex;
+  flex-direction: column;
+  }
+
+  .footer h3{
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .Apropos {
+    padding:  0;
+    margin: 0;
+  }
+  
+  .tailleBlocFoot {
+   padding: 0;}
+
+    
+
+ 
 }
