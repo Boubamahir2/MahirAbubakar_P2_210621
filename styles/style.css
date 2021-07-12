@@ -20,7 +20,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   margin: 0;
-
 }
 
 .page{
@@ -74,14 +73,13 @@ nav ul{
 
  nav a:hover{
   color: #0065fc;
-  border-top: 3px solid var(--clrBleu);
+  border-top: 3px solid  #0065fc;
   
  }
 .nav-bar{
   margin: 0;
   align-items: center;
   padding: 0;
-
 }
 
 .nav_a{
@@ -89,16 +87,14 @@ nav ul{
 }
 
 .nav_b{
-  color:var(--clrBleu);
+  color:#0065fc;
 }
 
-
-/*Heder*/
+/*Header*/
 header{
   font-size: 1.1rem;
   grid-area: header;
   padding:0 50px;
-
 }
 
 header h1{
@@ -108,13 +104,11 @@ font-size: 2.2rem;
 header p{
   margin:20px 0 ;
   font-size: 1.4rem;
-
 }
 
 .bloc_research{
 display: flex;
 }
-
 
 .iconSize {
   display: flex;
@@ -124,7 +118,7 @@ display: flex;
   height: 50px;
   width: 50px;
   border-radius: 10px 0 0 10px;
-  background: var(--clrGris);
+  background:#f2f2f2;
   cursor: pointer;
  }
 
@@ -144,7 +138,7 @@ display: flex;
   text-align: center;
   height: 50px;
   width: 130px;
-  background: var(--clrBleu);
+  background: #0065fc;
   color: white;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
@@ -167,19 +161,17 @@ display: flex;
   font-size: 1.1em;
 }
 
-
 .bloc-fas:hover > .filtreIcons {
   color: white;
-  background-color: var(--clrBleu);
+  background-color:#0065fc;
 }
 .bloc-fas:hover > .icons-text {
-  color:var(--clrBleu);
-  
+  color:var(--clrBleu); 
 }
 
 .researche:hover {
   background: var(--clrBleuCl);
-  color: var(--clrBleu);
+  color:#0065fc;
 }
 
 .filtre{
@@ -205,8 +197,7 @@ display: flex;
   width: 100%;
   border:2px solid #d1cece;
   border-radius:30px;
-  cursor: pointer;
-  
+  cursor: pointer; 
 }
 
 .bloc-fasanimal{
@@ -214,6 +205,7 @@ display: flex;
 }
 
 .bloc-fas i{
+  font-size: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,7 +226,6 @@ display: flex;
 
 .filtre h3{
   width:70px;
-
 }
 
 .info{
@@ -278,8 +269,9 @@ article{
   border-radius: 25px;
 }
 article h2{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 40px;
+  padding-top: 30px;
 }
 
 .hebergements{
@@ -310,20 +302,17 @@ box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
   margin: 0;
   height: 90px;
   width: 100%;
-
 }
 
 .auberge-elements h3{
   font-size: 1rem;
   margin: 0;
   padding: 5px 0 10px 20px;
-
 }
 .auberge-elements p{
   margin: 0;
   font-size: 0.8rem;
   padding-left: 20px;
-
 }
 
 .img {
@@ -357,7 +346,6 @@ box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 
 .elements p{
   font-size: 0.8rem;
-
 }
 
 .article-fas{
@@ -380,7 +368,6 @@ aside{
 
 .aside-fas{
   position: absolute;
- 
   bottom: 10px;
 }
 
@@ -398,10 +385,8 @@ aside{
 }
 
 .plusPopulaires h2 {
-  font-size: 1.5rem;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  
+  font-size: 1.6rem;
+  padding: 30px 10px; 
 }
 
 .plusPopulaires-hotel {
@@ -426,8 +411,7 @@ aside{
 
 section{
   grid-area: section;
-  padding: 20px 50px;
-
+  padding: 40px 50px;
 }
 
 .activité{
@@ -437,8 +421,8 @@ section{
 }
 
 section h2{
-  font-size: 1.5rem;
-
+  font-size: 1.6rem;
+  padding-bottom: 20px;
 }
 
 .elements-activité{
@@ -465,7 +449,6 @@ section h2{
   box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
   cursor: pointer;
   margin-top: 40px;
-
 }
 
 .Parc-Longchamp:hover{
@@ -499,8 +482,6 @@ section h2{
   transform:scale(1.05) ;
   transition: all 150ms ease-out;
 }
-
-
 
 .Îles-Frioules {
   cursor: pointer;
@@ -563,22 +544,19 @@ section h2{
   height: 280px;
   border-radius: 20px 20px 0 0;}
 
-
-
 footer{
   grid-area: footer;
 
 }
 
 footer {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   display: flex;
   margin-top: 70px;
   padding:20px 50px;
   height: 180px;
   width: 100%;
-  background: var(--clrGris);
-
+  background: #f2f2f2;
 }
 
 .footer {
@@ -627,6 +605,7 @@ footer {
   .auberge-elements h3{
     font-size: 0.9rem;
     padding-left: 10px;
+    padding-bottom: 5px;
   }
   
   .auberge-elements p{
@@ -635,7 +614,7 @@ footer {
   }
 
   .article-fas{
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     padding-left: 10px;
   }
 
@@ -648,13 +627,13 @@ footer {
   }
 
   .plusPopulaires-hotel h3{
-    padding-bottom: 10px;
-    font-size: 0.9rem;
+    padding-bottom: 5px;
+    font-size: 0.85rem;
     margin: 5px;
   }
 
   .aside-fas{
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
   .plusPopulaires-hotel p{
     font-size: 0.75rem;
@@ -680,7 +659,6 @@ footer {
     height: 140px; 
   }
 
-  
   .elements-activité{
     cursor: pointer;
     height: 490px;
@@ -776,7 +754,7 @@ footer {
     grid-gap: 10px;
     align-items: center;
     height: 40px;
-    margin: 0;
+    margin:20px 0;
     font-size: 0.65rem;
     width: 620px;
   }
@@ -790,6 +768,7 @@ footer {
   width: 100%;
   }
   .bloc-fas i{
+  font-size:1rem ;
   height: 40px;
   width: 40px;
  
@@ -825,10 +804,11 @@ footer {
 
   .bloc-aside{
     margin-bottom: 40px;
-    height: 250px;
+    height: 260px;
   }
 
   .bloc-aside h2{
+    padding: 20px 0;
     font-size: 1.1rem;
   }
 
@@ -841,7 +821,12 @@ footer {
   }
 
   .plusPopulaires-hotel h3{
+    padding-top: 10px;
     font-size: 0.8rem;
+  }
+
+  .plusPopulaires-hotel p{
+    padding-top: 5px;
   }
 
   .aside-fas{
@@ -866,7 +851,15 @@ footer {
     font-size: 0.6rem;
     margin: 0; 
   }
-  
+
+  article{
+    height: 550px;
+  }
+
+  article h2{
+    font-size: 1.2rem;
+    padding-left: 15px;
+  }
   
   .elements{
     padding-left: 5px;
@@ -944,7 +937,7 @@ footer {
   }
 
   .activité{
-   grid-gap:20pxpx;
+   grid-gap:20px;
    grid-template-columns: repeat(2, 1fr);
   }
   
@@ -963,53 +956,90 @@ footer {
  
 }
 
-@media screen and (min-width: 400px) and (max-width:699px) {
+@media screen and (min-width: 350px) and (max-width:699px) {
   nav{
     position: relative;
     font-size: 0.9rem;
-    border-bottom:#d1cece 3px solid;
+    border-bottom:#f2f2f2 3px solid;
     height: 120px;
   }
 
-  .nav_linkfirst a{
-    left:40px
+  .nav_linkfirst a {
+    left:0;
+    bottom: 0;
+  } 
+
+  .nav_linkfirst{
+    padding: 20px 50%; 
+  }
+
+  .nav_linkfirst:hover{
+    border: #f2f2f2 3px solid;
+  }
+  
+  .nav_linksecond a{
+    right:0;
+    bottom: 0;
   }
 
   .nav_a{
     position: absolute;
+    padding: 23px 15%;
   }
 
+  .nav_linksecond a:hover, .nav_linkfirst a:hover{
+    border-top:unset;
+    color: #0065fc;
+    border-bottom: 3px solid  #0065fc;
+   }
+
+  .nav_b{
+    position: absolute;
+    padding: 20px;
+    top: 10px;
+    right: 0;  
+  }
+  
   .bloc_header{
    
-    padding: 20px;
+    padding:5px 20px ;
   }
   .logo img{
     position: absolute;
     top: 20px;
-    left: -20px;
+    left: -30px;
     width: 130px;
     height: 35px;
   }
 
   .iconSize {
+    height: 40px;
     border-radius: 15px 0 0 15px;
    }
   
   #search {
-    width: 200px;
-    height: 50px;
+    width: 100%;
+    height: 40px;
     padding-left: 10px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  
+
+  .iconSize {
+    height: 40px;
+    width: 42px;
+    font-size: 1rem;
+   }
+
   .researche {
     margin-left: -15px;
-    width: 50px;
+    width: 42px;
+    height: 40px;
     border-radius:  15px;
    
   }
 
   .researche .fas {
+    font-size: 0.9rem;
     display: block;
   }
 
@@ -1036,26 +1066,30 @@ footer {
     width: 95%;
   }
 
+  div.filtre i{
+    font-size: 1rem;
+  }
+
   div.filtre h3{
   font-size: 1.2rem;
   }
 
   .bloc-fasEconomique{
-    grid-column: 1/ 4;
+    grid-column: 1/ 5;
     grid-row: 2;
   }
 
   .bloc-fasfamilial{
-    grid-column: 5/ 9;
+    grid-column: 6/ 11;
     grid-row: 2;
   }
   .bloc-fasRomantique{
-    grid-column: 1/ 4;
+    grid-column: 1/ 5;
     grid-row: 3;
   }
 
   .bloc-fasanimal{
-    grid-column: 1/ 5;
+    grid-column: 1/ 6;
     grid-row: 4;
   }
   .icons-text{
@@ -1126,25 +1160,21 @@ footer {
     font-size: 0.6rem;
   }
   .bloc-aside{
-    height: 550px;
+    height: 620px;
    display: flex;
    flex-flow: column;
-   /*background-color: unset;*/
    justify-content: space-evenly;
+   border-radius: unset;
   }
 
   .plusPopulaires{
     grid-column: 1/4;
   }
-  .hebergements{
-    display: flex;
-    flex-flow: column;
-    justify-items: center;
-    margin: 0 auto;
-    padding: 0;
-    align-items: center;
-    
+
+  .plusPopulaires h2{
+  padding: 20px;
   }
+
   .plusPopulaires-hotel h3{
     font-size: 1rem;
     margin-top: 5px;
@@ -1163,15 +1193,34 @@ footer {
   }
   
   main{
-    grid-template-rows: 600px
-  }
-
-  main{
+    grid-template-rows: 700px;
     display: flex;
     flex-flow: column-reverse;
-    padding: 20px;
+    padding: 0;
   }
   
+  .hebergements{
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center; 
+  }
+
+  .bloc-article{
+    background: unset;
+  }
+
+  .Afficher-plus{
+    padding: 20px;
+  }
+
+  .bloc-article h2{
+    font-size: 1.3rem;
+    padding: 20px ;
+  }
+
   .bloc_hotel{
   height: 255px;
   }
@@ -1180,7 +1229,6 @@ footer {
     font-size: 1.2rem;
   }
 
-
   .bloc_hotel p{
     font-size: 1rem;
   }
@@ -1188,24 +1236,21 @@ footer {
   .article-fas{
     font-size: 1rem;
   }
-  
+
   .img {
     height: 140px;
   }
   
-
   .plusPopulaires-hotel {
     height: 150px; 
   }
 
-
   .activité{
-   
     grid-template-columns: repeat(1, 1fr);
    }
+
   .elements-activité{
-    height: 200px;
-    
+    height: 200px; 
   }
 
   section{
@@ -1214,7 +1259,7 @@ footer {
 
   section h2{
     font-size: 1.2rem;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   
   .bloc-pomegues-notreDame{
@@ -1227,7 +1272,6 @@ footer {
   
   .Fort-Pomégues{
     height: 200px;
-   
   }
   
   .Notre-Dame {
@@ -1285,7 +1329,377 @@ footer {
   .tailleBlocFoot {
    padding: 0;}
 
-    
+}
 
+
+@media screen and (min-width: 50px) and (max-width:349px) {
+  nav{
+    position: relative;
+    font-size: 0.8rem;
+    border-bottom:#f2f2f2 3px solid;
+    height: 120px;
+  }
+
+  .nav_linkfirst a {
+    left:0;
+    bottom: 0;
+  } 
+
+  .nav_linkfirst{
+    padding: 20px 50%; 
+  }
+
+  .nav_linkfirst:hover{
+    border: #f2f2f2 3px solid;
+  }
+  
+  .nav_linksecond a{
+    right:0;
+    bottom: 0;
+  }
+
+  .nav_a{
+    position: absolute;
+    padding: 23px 15%;
+  }
+
+  .nav_linksecond a:hover, .nav_linkfirst a:hover{
+    border-top:unset;
+    color: #0065fc;
+    border-bottom: 3px solid  #0065fc;
+   }
+
+  .nav_b{
+    position: absolute;
+    padding: 20px;
+    top: 10px;
+    right: 0;  
+  }
+  
+  .bloc_header{
+   
+    padding:5px 20px ;
+  }
+  .logo img{
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    width: 120px;
+    height: 30px;
+  }
+
+  #search {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 0.8rem;
+  }
+
+  .iconSize {
+    height: 40px;
+    width: 42px;
+    font-size: 1rem;
+   }
+
+  .researche {
+    margin-left: -15px;
+    width: 42px;
+    height: 40px;
+    border-radius:  13px;
+  }
+
+  .researche .fas {
+    font-size: 0.9rem;
+    display: block;
+  }
+
+  .researche span{
+    display: none;
+  }
+
+  header h1{
+    font-size: 1rem;
+  }
+  header p{
+    font-size: 0.75rem;
+    margin: 0 0 20px 0;
+  }
+
+  div.filtre{
+    display: grid;
+    grid-template-rows:repeat(4, 30px) ;
+    grid-gap: 20px;
+    align-items: center;
+    height: 200px;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 0.75rem;
+    width: 95%;
+  }
+
+  div.filtre i{
+    font-size: 1rem;
+  }
+
+  div.filtre h3{
+  font-size: 0.9rem;
+  }
+
+  .bloc-fasEconomique{
+    grid-column: 1/ 5;
+    grid-row: 2;
+  }
+
+  .bloc-fasfamilial{
+    grid-column: 5/ 11;
+    grid-row: 2;
+  }
+  .bloc-fasRomantique{
+    grid-column: 1/ 5;
+    grid-row: 3;
+  }
+
+  .bloc-fasanimal{
+    grid-column: 1/ 6;
+    grid-row: 4;
+  }
+  .icons-text{
+    padding-left: 35px;
+  }
+  
+  .bloc-fas{ 
+  height: 38px;
+  width: 100%;
+  }
+  .bloc-fas i{
+  height: 38px;
+  width: 38px;
  
+  }
+  div.info{
+    margin-top: 5px;
+
+  }
+  .info p{
+  font-size: 0.7rem;
+  padding-left: 50px 0;
+  margin:10px 0;
+  }
+
+  .infoicon{
+    font-size: 0.65rem;
+  height: 22px;
+  width: 29px;
+  }
+
+  .auberge-elements h3{
+    font-size: 0.7rem;
+    padding-left: 10px;
+  }
+  
+  .auberge-elements p{
+    padding-left: 10px;
+    font-size: 0.7rem;
+  }
+
+  .article-fas{
+    font-size: 0.6rem;
+    padding-left: 10px;
+  }
+
+  .bloc-aside{
+    margin-bottom: 40px;
+    height: 250px;
+  }
+
+  .bloc-aside h2{
+    font-size: 1.1rem;
+  }
+
+  .bloc-aside .fa-chart-line{
+    font-size: 1.2rem;
+  }
+
+  .plusPopulaires-hotel{
+    margin: 0 auto;
+  }
+
+  .plusPopulaires-hotel h3{
+    font-size: 0.8rem;
+  }
+
+  .aside-fas{
+    font-size: 0.6rem;
+  }
+  .bloc-aside{
+    height: 620px;
+   display: flex;
+   flex-flow: column;
+   justify-content: space-evenly;
+   border-radius: unset;
+  }
+
+  .plusPopulaires{
+    grid-column: 1/4;
+  }
+
+  .plusPopulaires h2{
+  padding: 20px;
+  }
+
+  .plusPopulaires-hotel h3{
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  .plusPopulaires-hotel p{
+    font-size: 0.8rem;
+    margin: 0; 
+  }
+
+  .aside-fas{
+    font-size: 0.75rem;
+  }
+  
+  .elements{
+    padding-left: 10px;
+  }
+  
+  main{
+    grid-template-rows: 700px;
+    display: flex;
+    flex-flow: column-reverse;
+    padding: 0;
+  }
+  
+  .hebergements{
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center; 
+  }
+
+  .bloc-article{
+    background: unset;
+  }
+
+  .Afficher-plus{
+    padding: 20px;
+  }
+
+  .bloc-article h2{
+    font-size: 1.1rem;
+    padding: 20px ;
+  }
+
+  .bloc_hotel{
+  height: 255px;
+  }
+
+  .bloc_hotel h3{
+    font-size: 1rem;
+  }
+
+  .bloc_hotel p{
+    font-size: 0.8rem;
+  }
+
+  .article-fas{
+    font-size: 0.75rem;
+  }
+
+  .img {
+    height: 140px;
+  }
+  
+  .plusPopulaires-hotel {
+    height: 150px; 
+  }
+
+  .activité{
+    grid-template-columns: repeat(1, 1fr);
+   }
+
+  .elements-activité{
+    height: 200px; 
+  }
+
+  section{
+    padding: 20px;
+  }
+
+  section h2{
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+  
+  .bloc-pomegues-notreDame{
+    height: 500px; 
+  }
+  
+  .Parc-Longchamp {
+    height: 200px;
+  }
+  
+  .Fort-Pomégues{
+    height: 200px;
+  }
+  
+  .Notre-Dame {
+    height: 200px;
+  }
+
+  .Îles-Frioules {
+    height: 200px;
+  }
+ 
+  .Vieux-Port img {
+    height: 150px; 
+  }
+  
+  .Fort-Pomégues img {
+    height: 150px;
+  }
+  
+  .Îles-Frioules img {
+    height: 150px;
+  }
+  .Parc-Calanques img {
+    height: 150px;
+  }
+  
+  .Notre-Dame img {
+    height: 150px;  
+  }
+  
+  .Parc-Longchamp img {
+    width: 100%;
+    height: 150px
+  }
+ 
+  footer {
+    padding: 25px;
+    margin: 0;
+    height: 360px;
+    font-size: 1rem;
+  }
+
+  .footer{
+  display: flex;
+  flex-direction: column;
+  }
+
+  .footer h3{
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  .Apropos {
+    padding:  0;
+    margin: 0;
+  }
+  
+  .tailleBlocFoot {
+   padding: 0;}
+
 }
