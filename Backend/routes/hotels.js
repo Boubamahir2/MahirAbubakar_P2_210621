@@ -11,7 +11,7 @@ import authorizePermissions from "../middleware/fullAuth.js";
     updateHotel,
     deleteHotel,
     uploadImage,
-    showStats,
+    showStats
   } from "../controllers/hotels.js";
 
 

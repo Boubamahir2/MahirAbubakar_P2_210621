@@ -1,5 +1,5 @@
 {
-  "name": "10-e-commerce-api",
+  "name": "reservia",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -27,8 +27,10 @@
     "mongoose": "^6.0.8",
     "morgan": "^1.10.0",
     "nodemailer": "^6.7.0",
+    "swagger-ui-express": "^4.4.0",
     "validator": "^13.6.0",
-    "xss-clean": "^0.1.1"
+    "xss-clean": "^0.1.1",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.9"

@@ -4,10 +4,13 @@ import dotenv from "dotenv";
 import cors from "cors";
 
 
+
 dotenv.config();
 import "express-async-errors";
 import morgan from "morgan";
 import fileUpload  from "express-fileupload";
+
+
 
 
 import helmet from "helmet";
@@ -15,13 +18,19 @@ import xss from "xss-clean";
 import mongoSanitize from "express-mongo-sanitize";
 import rateLimiter  from 'express-rate-limit';
 
+// swagger documentation
+import swaggerUi from "swagger-ui-express";
+import YAML from "yamljs";
+const swaggerDocument = YAML.load("./swagger.yaml");
+
+
 // hello
 // db and authenticateUser
 import connectDB from "./db/connect.js";
 
 // routers
 import authRouter from "./routes/authRoutes.js";
-import hotelsRouter from "./routes/Hotels.js";
+import hotelsRouter from "./routes/hotels.js";
 import userRouter from "./routes/userRoutes.js";
 
 // middleware
@@ -46,18 +55,24 @@ app.use(cors());
 app.use(xss());
 app.use(mongoSanitize());
 
+// swagger documentation
+app.get("/", (req, res) => {
+  res.send(
+    "<h1>Welcome to Hotel Reservia API</h1><br><a href='/api-docs'>Documetation</a>"
+  );
+});
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use(express.static("public"));
 
-// only when ready to deploy
-// app.use(express.static(path.resolve(__dirname, './client/build')))
-app.use(express.static("./public"));
 app.use(fileUpload())
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/hotels", hotelsRouter);
 app.use("/api/v1/users", userRouter);
 
+
 // only when ready to deploy
 // app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, './client/build', 'index.html'))
+//   res.sendFile(path.resolve(__dirname, './build', 'index.html'))
 // })
 
 app.use(notFoundMiddleware);
