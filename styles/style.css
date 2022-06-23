@@ -688,7 +688,7 @@ section h2 {
   position: relative;
   flex: 1 1 18rem;
   /* height: 19.8rem; */
-  height: 19.5rem;
+  height: 18.5rem;
   border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: rgb(121 121 121 / 40%) 1px 1px 20px;
@@ -748,7 +748,7 @@ section h2 {
 .aside-header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem ;
 }
 
 .aside-card {
@@ -759,7 +759,7 @@ section h2 {
   box-shadow: rgb(121 121 121 / 40%) 1px 1px 20px;
   border: .5rem solid whitesmoke;
   position: relative;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   cursor: pointer;
 }
 
